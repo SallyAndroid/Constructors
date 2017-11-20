@@ -2,6 +2,9 @@ public class World {
 	public static void main(String[] args){
 		Coder c = new Coder();
 		c.describe();//int的默认值是0.一个空的对象引用变量（指向一个对象的一个变量）的默认值是null。
+		System.out.println("");//insert empty line for readability
+		c.initialize("Bill",59);
+		c.describe();
 	}
 }
 
