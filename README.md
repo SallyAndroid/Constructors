@@ -1,9 +1,6 @@
 public class World {
 	public static void main(String[] args){
-		Coder c = new Coder();
-		c.describe();//int的默认值是0.一个空的对象引用变量（指向一个对象的一个变量）的默认值是null。
-		System.out.println("");//insert empty line for readability
-		c.initialize("Bill",59);
+		Coder c = new Coder("Bill",59);
 		c.describe();
 	}
 }
@@ -12,7 +9,7 @@ public class Coder {
 	private String name;
 	private int age;
 	
-	public void initialize(String name,int age){
+	public Coder(String name,int age){
 		this.name = name;
 		this.age = age;
 	}
